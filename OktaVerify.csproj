@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files\Okta\Okta Verify\OktaVerify.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FC295AF0-8F6F-47F3-B549-E849D94BF305}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>OktaVerify</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Okta.Authenticator.NativeApp</RootNamespace>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>4.0.2.0</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Okta.Authenticator.NativeApp.App</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IdentityModel">
+      <HintPath>lib\IdentityModel.dll</HintPath>
+    </Reference>
+    <Reference Include="IdentityModel.OidcClient">
+      <HintPath>lib\IdentityModel.OidcClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter">
+      <HintPath>lib\Microsoft.AppCenter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.Analytics">
+      <HintPath>lib\Microsoft.AppCenter.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.Crashes">
+      <HintPath>lib\Microsoft.AppCenter.Crashes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions">
+      <HintPath>lib\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xaml.Behaviors">
+      <HintPath>lib\Microsoft.Xaml.Behaviors.dll</HintPath>
+    </Reference>
+    <Reference Include="Okta.AutoUpdate.Executor">
+      <HintPath>lib\Okta.AutoUpdate.Executor.dll</HintPath>
+    </Reference>
+    <Reference Include="Okta.AutoUpdate.Shim">
+      <HintPath>lib\Okta.AutoUpdate.Shim.dll</HintPath>
+    </Reference>
+    <Reference Include="Okta.DeviceAccess.Windows">
+      <HintPath>lib\Okta.DeviceAccess.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Okta.Devices.SDK.Core">
+      <HintPath>lib\Okta.Devices.SDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Okta.Devices.SDK.Core.Windows">
+      <HintPath>lib\Okta.Devices.SDK.Core.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Okta.Devices.SDK.Win32">
+      <HintPath>lib\Okta.Devices.SDK.Win32.dll</HintPath>
+    </Reference>
+    <Reference Include="Okta.Oidc.Abstractions">
+      <HintPath>lib\Okta.Oidc.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Okta.Oidc.Wpf">
+      <HintPath>lib\Okta.Oidc.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Okta.OktaVerify.Windows.Core">
+      <HintPath>lib\Okta.OktaVerify.Windows.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="OktaVerify.Bridge">
+      <HintPath>lib\OktaVerify.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Prism">
+      <HintPath>lib\Prism.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>lib\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleInjector">
+      <HintPath>lib\SimpleInjector.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MachineJoinStatusFlags.cs" />
+    <Compile Include="IApplicationHandler.cs" />
+    <Compile Include="ApplicationHandler.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="App.cs" />
+    <Compile Include="WebClient\OktaPublicKeyList.cs" />
+    <Compile Include="Views\DeviceHealthAttributeView.cs" />
+    <Compile Include="Views\DeviceHealthView.cs" />
+    <Compile Include="Views\DeviceNotSupportedView.cs" />
+    <Compile Include="Views\JITWelcomeView.cs" />
+    <Compile Include="Views\FeedbackView.cs" />
+    <Compile Include="Views\AboutView.cs" />
+    <Compile Include="Views\AccountAddedView.cs" />
+    <Compile Include="Views\AccountNotFoundView.cs" />
+    <Compile Include="Views\AccountVerifiedView.cs" />
+    <Compile Include="Views\AccountDetailsView.cs" />
+    <Compile Include="Views\BrowserSignInRedirectView.cs" />
+    <Compile Include="Views\EnrollingView.cs" />
+    <Compile Include="Views\AllowWindowsHelloView.cs" />
+    <Compile Include="Views\ConfigureWindowsHelloView.cs" />
+    <Compile Include="Views\EnrollAccountView.cs" />
+    <Compile Include="Views\NotificationBannerView.cs" />
+    <Compile Include="Views\AccountsListView.cs" />
+    <Compile Include="Views\AddAccountView.cs" />
+    <Compile Include="Views\ConfirmDialogView.cs" />
+    <Compile Include="Views\InProgressDialogView.cs" />
+    <Compile Include="Views\PageBlockedView.cs" />
+    <Compile Include="Views\SetAsDefaultAccountView.cs" />
+    <Compile Include="Views\SettingsView.cs" />
+    <Compile Include="Views\OnboardingView.cs" />
+    <Compile Include="Views\SignInConfirmationView.cs" />
+    <Compile Include="Views\SendFeedbackView.cs" />
+    <Compile Include="Views\SubmittedFeedbackView.cs" />
+    <Compile Include="Views\SignInView.cs" />
+    <Compile Include="Views\SignInWithRedirectView.cs" />
+    <Compile Include="Views\UpdateWindowsHelloSettingsView.cs" />
+    <Compile Include="Views\WelcomeView.cs" />
+    <Compile Include="Views\MainView.cs" />
+    <Compile Include="ViewModels\AccountAddedViewModel.cs" />
+    <Compile Include="ViewModels\AccountOverviewViewModel.cs" />
+    <Compile Include="ViewModels\DeviceHealthAttributeViewModel.cs" />
+    <Compile Include="ViewModels\DeviceHealthViewModel.cs" />
+    <Compile Include="ViewModels\DeviceNotSupportedViewModel.cs" />
+    <Compile Include="ViewModels\ReEnrollViewModel.cs" />
+    <Compile Include="ViewModels\EnrollingViewModel.cs" />
+    <Compile Include="ViewModels\PageBlockedViewModel.cs" />
+    <Compile Include="ViewModels\SetAsDefaultAccountViewModel.cs" />
+    <Compile Include="ViewModels\UpdateWindowsHelloSettingsViewModel.cs" />
+    <Compile Include="ViewModels\AboutViewModel.cs" />
+    <Compile Include="ViewModels\AccountNotFoundViewModel.cs" />
+    <Compile Include="ViewModels\AccountVerifiedViewModel.cs" />
+    <Compile Include="ViewModels\AccountDetailsViewModel.cs" />
+    <Compile Include="ViewModels\AllowWindowsHelloViewModel.cs" />
+    <Compile Include="ViewModels\AsyncInlineScenarioViewModel`1.cs" />
+    <Compile Include="ViewModels\BrowserSignInRedirectViewModel.cs" />
+    <Compile Include="ViewModels\ConfigureWindowsHelloViewModel.cs" />
+    <Compile Include="ViewModels\AsyncInlineOperationViewModel`1.cs" />
+    <Compile Include="ViewModels\EnrollAccountViewModel.cs" />
+    <Compile Include="ViewModels\EnrollViewState.cs" />
+    <Compile Include="ViewModels\JITEnrollmentViewModel.cs" />
+    <Compile Include="ViewModels\JITOnboardingViewModel.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="ViewModels\ManualEnrollmentViewModel.cs" />
+    <Compile Include="ViewModels\NotificationBannerViewModel.cs" />
+    <Compile Include="ViewModels\BaseConfirmDialogViewModel.cs" />
+    <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\DisableVerificationDialogViewModel.cs" />
+    <Compile Include="ViewModels\BaseEnrollAccountViewModel.cs" />
+    <Compile Include="ViewModels\InProgressDialogViewModel.cs" />
+    <Compile Include="ViewModels\SettingsViewModel.cs" />
+    <Compile Include="ViewModels\OnboardingStep.cs" />
+    <Compile Include="ViewModels\OnboardingViewModel.cs" />
+    <Compile Include="ViewModels\SignInConfirmationViewModel.cs" />
+    <Compile Include="ViewModels\RemoveAccountDialogViewModel.cs" />
+    <Compile Include="ViewModels\SendFeedbackViewModel.cs" />
+    <Compile Include="ViewModels\SendFeedbackViewModelState.cs" />
+    <Compile Include="ViewModels\SignInViewModel.cs" />
+    <Compile Include="ViewModels\UserVerificationEnrollmentViewModel.cs" />
+    <Compile Include="ViewModels\AccountListViewModel.cs" />
+    <Compile Include="UIEvents\MainViewStateEvent.cs" />
+    <Compile Include="UIEvents\MainViewState.cs" />
+    <Compile Include="TemplateSelectors\EnrollAccountTemplateSelector.cs" />
+    <Compile Include="TemplateSelectors\MainViewTemplateSelector.cs" />
+    <Compile Include="Converters\IsDisabledToOpacityConverter.cs" />
+    <Compile Include="Converters\MultiBooleanAndConverter.cs" />
+    <Compile Include="Converters\NegateBooleanConverter.cs" />
+    <Compile Include="Controls\WindowAdorner.cs" />
+    <Compile Include="Installation\AppInstallationManager.cs" />
+    <Compile Include="Installation\IAppInstallationManager.cs" />
+    <Compile Include="Properties\BuildSettings.cs" />
+    <Compile Include="MultilingualResources\MultilingualHelper.cs" />
+    <Compile Include="MultilingualResources\ResourceExtensions.cs" />
+    <Compile Include="Models\AppThemeSettingType.cs" />
+    <Compile Include="Models\OktaVerifySettingsModel.cs" />
+    <Compile Include="Enums\AccountState.cs" />
+    <Compile Include="ApplicationInfo\IApplicationInfoManager.cs" />
+    <Compile Include="ApplicationInfo\OktaVerifyApplicationInfoManager.cs" />
+    <Compile Include="ApplicationInfo\IOktaVerifyInformation.cs" />
+    <Compile Include="ApplicationInfo\OktaVerifyInformation.cs" />
+    <Compile Include="Storage\ClientStorageManager.cs" />
+    <Compile Include="Storage\IClientStorageManager.cs" />
+    <Compile Include="Logging\ClientCompositeLogger.cs" />
+    <Compile Include="Injector\DevicesSdk.cs" />
+    <Compile Include="Injector\SdkDependencyProvider.cs" />
+    <Compile Include="Injector\AppInjector.cs" />
+    <Compile Include="Injector\BaseContainer.cs" />
+    <Compile Include="Injector\OktaVerifyContainer.cs" />
+    <Compile Include="Bindings\BindingEventHandler.cs" />
+    <Compile Include="Bindings\BindingInformationModel.cs" />
+    <Compile Include="Bindings\BindingsManager.cs" />
+    <Compile Include="Bindings\IBindingsManager.cs" />
+    <Compile Include="Behaviors\SystemMenuBehavior.cs" />
+    <Compile Include="Behaviors\WindowBehavior.cs" />
+    <Compile Include="Exceptions\OktaVerifyAppException.cs" />
+    <Compile Include="Exceptions\OktaCustomerErrorReportException.cs" />
+    <Compile Include="Exceptions\OktaErrorReportException.cs" />
+    <Compile Include="Factories\ViewModelFactory.cs" />
+    <Compile Include="UI\ViewModels\NavigationItemViewModel.cs" />
+    <Compile Include="UI\Models\AttachedWindowModel.cs" />
+    <Compile Include="UI\Models\NativeWindowModel.cs" />
+    <Compile Include="UI\Handlers\WindowActivationHandler.cs" />
+    <Compile Include="UI\Handlers\IWindowActivationHandler.cs" />
+    <Compile Include="UI\Handlers\IJumpListHandler.cs" />
+    <Compile Include="UI\Handlers\JumpListHandler.cs" />
+    <Compile Include="UI\Enums\JumpTask.cs" />
+    <Compile Include="UI\Enums\NavigationSection.cs" />
+    <Compile Include="UI\Enums\NativeWindowState.cs" />
+    <Compile Include="Telemetry\ApplicationTelemetryOperation.cs" />
+    <Compile Include="Telemetry\AppTelemetryOperation.cs" />
+    <Compile Include="Telemetry\CachedTelemetryDataPoint.cs" />
+    <Compile Include="Telemetry\ITelemetryDataManager.cs" />
+    <Compile Include="Telemetry\TelemetryDataManager.cs" />
+    <Compile Include="Telemetry\ScenarioType.cs" />
+    <Compile Include="Telemetry\AnalyticsScenarioAttribute.cs" />
+    <Compile Include="Telemetry\IAnalyticsProvider.cs" />
+    <Compile Include="Telemetry\IAnalyticsRepository.cs" />
+    <Compile Include="Telemetry\AnalyticsConfigurationType.cs" />
+    <Compile Include="Telemetry\AppCenterAnalyticsRepository.cs" />
+    <Compile Include="Telemetry\AnalyticsRepositoryBase.cs" />
+    <Compile Include="Telemetry\OktaVerifyAnalyticsProvider.cs" />
+    <Compile Include="Telemetry\AppTelemetryScenario.cs" />
+    <Compile Include="Telemetry\AppTelemetryDataKey.cs" />
+    <Compile Include="Telemetry\TelemetryExtensions.cs" />
+    <Compile Include="Sandbox\AuthenticatorSandboxHandler.cs" />
+    <Compile Include="Sandbox\AuthenticatorSandboxManager.cs" />
+    <Compile Include="Sandbox\IAuthenticatorSandboxManager.cs" />
+    <Compile Include="RegistryWatcher\OktaDeviceAccessRegistryChangedEvent.cs" />
+    <Compile Include="RegistryWatcher\OktaDeviceAccessRegistryWatcher.cs" />
+    <Compile Include="RegistryWatcher\OktaDeviceAccessRegistryWatcherState.cs" />
+    <Compile Include="Interop\CopyDataStruct.cs" />
+    <Compile Include="Interop\NativeWindowMessageType.cs" />
+    <Compile Include="Interop\SystemInfoProcessorArchitecture.cs" />
+    <Compile Include="Interop\WtsSessionChangeType.cs" />
+    <Compile Include="Interop\NativeLibrary.cs" />
+    <Compile Include="Interop\SafeProcessHeapHandle.cs" />
+    <Compile Include="Interop\SafeProcessHeapStringHandle.cs" />
+    <Compile Include="Interop\SafeProcessHeapByteArrayHandle.cs" />
+    <Compile Include="Interop\SafeProcessHeapSecureStringHandle.cs" />
+    <Compile Include="Interop\SafeProcessHeapIntArrayHandle.cs" />
+    <Compile Include="Interop\SafeProcessHeapStructHandle.cs" />
+    <Compile Include="Interop\NativeMethods.cs" />
+    <Compile Include="Enrollment\EnrollmentError.cs" />
+    <Compile Include="Enrollment\EnrollmentFailureReason.cs" />
+    <Compile Include="Enrollment\OktaAccountExtensions.cs" />
+    <Compile Include="Enrollment\AccountStateManager.cs" />
+    <Compile Include="Enrollment\IAccountStateManager.cs" />
+    <Compile Include="Enrollment\AccountErrorStateTypes.cs" />
+    <Compile Include="Enrollment\AccountSettingsModel.cs" />
+    <Compile Include="Enrollment\EnrollmentStateType.cs" />
+    <Compile Include="Enrollment\EnrollmentParameters.cs" />
+    <Compile Include="Enrollment\EnrollmentStateContext.cs" />
+    <Compile Include="Enrollment\OrganizationEnrollmentStatus.cs" />
+    <Compile Include="Enrollment\ClientAccountManager.cs" />
+    <Compile Include="Enrollment\IClientAccountManager.cs" />
+    <Compile Include="Enrollment\IOktaAccount.cs" />
+    <Compile Include="Enrollment\OktaAccount.cs" />
+    <Compile Include="Authentication\AuthenticationRequestContext.cs" />
+    <Compile Include="Authentication\AuthenticationRequestStatus.cs" />
+    <Compile Include="Authentication\AuthenticationRequestManager.cs" />
+    <Compile Include="Authentication\IAuthenticationRequestManager.cs" />
+    <Compile Include="Authentication\SignInResult.cs" />
+    <Compile Include="Authentication\OktaVerifyOidcClient.cs" />
+    <Compile Include="Authentication\CredentialEventHandler.cs" />
+    <Compile Include="Authentication\ISignInInformationModel.cs" />
+    <Compile Include="Authentication\SignInErrorCode.cs" />
+    <Compile Include="Authentication\IOidcFactory.cs" />
+    <Compile Include="Authentication\OktaVerifyOidcFactory.cs" />
+    <Compile Include="Authentication\IClientSignInManager.cs" />
+    <Compile Include="Authentication\ClientSignInManager.cs" />
+    <Compile Include="Authentication\SignInInformationModel.cs" />
+    <Compile Include="Events\AccountStateEvent.cs" />
+    <Compile Include="Events\BannerNotificationEvent.cs" />
+    <Compile Include="Events\AccountListEvent.cs" />
+    <Compile Include="Events\ListChangeType.cs" />
+    <Compile Include="Events\UserSessionChangedEvent.cs" />
+    <Compile Include="Events\AccountEnrollEndEvent.cs" />
+    <Compile Include="Events\DialogViewStateResultEvent.cs" />
+    <Compile Include="Events\DialogViewStateResult.cs" />
+    <Compile Include="Events\AppStateRequestEvent.cs" />
+    <Compile Include="Events\AppStateRequest.cs" />
+    <Compile Include="Events\ViewStateRequestEvent.cs" />
+    <Compile Include="Events\ViewStateRequest.cs" />
+    <Compile Include="Events\AccountEnrollStartEvent.cs" />
+    <Compile Include="Events\AppStateEvent.cs" />
+    <Compile Include="Events\DialogViewStateEvent.cs" />
+    <Compile Include="Events\AnalyticsEvent.cs" />
+    <Compile Include="Events\EventPayloads\ApplicationStateType.cs" />
+    <Compile Include="Events\EventPayloads\AnalyticsEventData.cs" />
+    <Compile Include="Events\EventPayloads\AnalyticsEventType.cs" />
+    <Compile Include="Events\EventPayloads\AccountLifecycleEventType.cs" />
+    <Compile Include="Events\EventPayloads\AccountStateContext.cs" />
+    <Compile Include="Events\EventPayloads\AccountListChange.cs" />
+    <Compile Include="Events\EventPayloads\AppStateRequestType.cs" />
+    <Compile Include="Events\EventPayloads\BannerNotification.cs" />
+    <Compile Include="Events\EventPayloads\BannerType.cs" />
+    <Compile Include="Events\EventPayloads\TemporaryApplicationStateType.cs" />
+    <Compile Include="Events\EventPayloads\MainViewType.cs" />
+    <Compile Include="Events\EventPayloads\ComputingStateType.cs" />
+    <Compile Include="Events\EventPayloads\UserSessionChangedEventType.cs" />
+    <Compile Include="Events\EventPayloads\EnrollEndEventType.cs" />
+    <Compile Include="Events\EventPayloads\EnrollmentEndEventArg.cs" />
+    <Compile Include="Events\EventPayloads\AppState.cs" />
+    <Compile Include="Events\EventPayloads\EnrollmentStartEventArg.cs" />
+    <Compile Include="Events\EventPayloads\EnrollStartEventType.cs" />
+    <Compile Include="Events\EventPayloads\IDialogViewState.cs" />
+    <Compile Include="Events\EventPayloads\DialogViewState`1.cs" />
+    <Compile Include="Events\EventPayloads\DialogViewType.cs" />
+    <Compile Include="Events\EventPayloads\ExecutionDeferral.cs" />
+    <Compile Include="Configuration\CallerBinaryValidationType.cs" />
+    <Compile Include="Configuration\LoopbackBindingOperationMode.cs" />
+    <Compile Include="Configuration\DeviceConfigurationManager.cs" />
+    <Compile Include="Configuration\IDeviceConfigurationManager.cs" />
+    <Compile Include="Configuration\RegistryExtensions.cs" />
+    <Compile Include="Configuration\BuildSettingsConfig.cs" />
+    <Compile Include="Configuration\FeatureSettings.cs" />
+    <Compile Include="Configuration\FeatureType.cs" />
+    <Compile Include="Configuration\DeviceHealthOptions.cs" />
+    <Compile Include="Configuration\IBuildSettingsConfig.cs" />
+    <Compile Include="Configuration\IFeatureSettings.cs" />
+    <Compile Include="Configuration\ConfigurationManagerExtensions.cs" />
+    <Compile Include="Configuration\IConfigurationManager.cs" />
+    <Compile Include="Configuration\OktaVerifyConfigurationManager.cs" />
+    <Compile Include="ApplicationInstance\IWindowsMessageReceiver.cs" />
+    <Compile Include="ApplicationInstance\SingletonSignals.cs" />
+    <Compile Include="ApplicationInstance\StartupOperation.cs" />
+    <Compile Include="ApplicationInstance\WindowsMessageReceiver.cs" />
+    <Compile Include="ApplicationInstance\ExecutionDeferralHandler.cs" />
+    <Compile Include="ApplicationInstance\ISingleInstanceIdentifier.cs" />
+    <Compile Include="ApplicationInstance\SingleInstanceIdentifier.cs" />
+    <Compile Include="ApplicationInstance\StartupArgumentType.cs" />
+    <Compile Include="ApplicationInstance\IWindowsMessageSender.cs" />
+    <Compile Include="ApplicationInstance\WindowsMessageSender.cs" />
+    <Compile Include="ApplicationInstance\ISingletonHandler.cs" />
+    <Compile Include="ApplicationInstance\IStartupHandler.cs" />
+    <Compile Include="ApplicationInstance\SingletonHandler.cs" />
+    <Compile Include="ApplicationInstance\StartupHandler.cs" />
+    <Compile Include="ApplicationInstance\StateMachine\ApplicationStateContext.cs" />
+    <Compile Include="ApplicationInstance\StateMachine\ApplicationStateMachine.cs" />
+    <Compile Include="ApplicationInstance\StateMachine\ApplicationStateManager`4.cs" />
+    <Compile Include="ApplicationInstance\StateMachine\ApplicationStateDeferral.cs" />
+    <Compile Include="ApplicationInstance\StateMachine\ComputingStateDeferral.cs" />
+    <Compile Include="ApplicationInstance\StateMachine\IApplicationStateMachine.cs" />
+    <Compile Include="ApplicationInstance\StateMachine\ComputingStateContext.cs" />
+    <Compile Include="XamlGeneratedNamespace\GeneratedInternalTypeHelper.cs" />
+    <Compile Include="OktaAuthenticator\Properties\Settings.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

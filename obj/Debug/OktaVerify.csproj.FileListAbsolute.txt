@@ -1,0 +1,4 @@
+D:\okta-verify\OktaVerify\obj\Debug\OktaVerify.csproj.AssemblyReference.cache
+D:\okta-verify\OktaVerify\obj\Debug\OktaVerify.csproj.SuggestedBindingRedirects.cache
+D:\okta-verify\OktaVerify\obj\Debug\OktaVerify.exe.config
+D:\okta-verify\OktaVerify\obj\Debug\OktaVerify.csproj.CoreCompileInputs.cache
